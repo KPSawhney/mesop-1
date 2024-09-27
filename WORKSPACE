@@ -1,6 +1,6 @@
 #Workspace for angular material
 workspace(
-    name = "mesop",
+    name = "genai",
     # managed_directories = {"@npm": ["node_modules"]},
 )
 
@@ -262,7 +262,7 @@ esbuild_repositories(
 )
 
 #####################
-# Mesop
+# Genai
 #####################
 
 load("@//:workspace.bzl", "op_workspace")

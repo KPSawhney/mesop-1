@@ -1,7 +1,0 @@
-syntax = "proto2";
-
-package mesop.components.markdown;
-
-message MarkdownType {
-    optional string text = 1;
-}

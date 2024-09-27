@@ -1,8 +1,0 @@
-
-syntax = "proto2";
-
-package mesop.components.icon;
-
-message IconType {
-  optional string icon = 1;
-}

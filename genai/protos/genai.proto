@@ -1,0 +1,60 @@
+syntax = "proto3";
+
+package genai;
+
+import "google/protobuf/any.proto";
+import "google/protobuf/timestamp.proto";
+
+message Node {
+  string id = 1;
+  repeated string child_ids = 4;
+  optional Chunk chunk = 5;
+}
+
+message NodeFragment {
+  string id = 1;
+  int32 seq = 2;
+  bool continued = 3;
+  repeated string child_ids = 4;
+  optional Chunk chunk_fragment = 5;
+}
+
+message Chunk {
+  ChunkMetadata metadata = 1;
+
+  oneof payload {
+    string ref = 3;
+    bytes data = 10;
+  }
+}
+
+message ChunkMetadata {
+  string mimetype = 1;
+  string role = 2;
+  string original_file_name = 3;
+  google.protobuf.Timestamp capture_time = 6;
+  repeated google.protobuf.Any experimental = 100;
+}
+
+message NamedParameter {
+  string name = 1;
+  string id = 2;
+}
+
+message TargetSpec {
+  string id = 1;
+}
+
+message Action {
+  reserved 1;
+  string name = 2;
+  repeated NamedParameter inputs = 3;
+  repeated NamedParameter outputs = 4;
+  repeated google.protobuf.Any configs = 5;
+  TargetSpec target_spec = 6;
+}
+
+message SessionMessage {
+  repeated NodeFragment node_fragments = 1;
+  repeated Action actions = 2;
+}

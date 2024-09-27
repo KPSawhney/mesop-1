@@ -1,8 +1,0 @@
-
-syntax = "proto2";
-
-package mesop.components.divider;
-
-message DividerType {
-  optional bool inset = 2;
-}

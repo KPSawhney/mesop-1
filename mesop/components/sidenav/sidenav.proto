@@ -1,7 +1,0 @@
-syntax = "proto2";
-
-package mesop.components.sidenav;
-
-message SidenavType {
-    optional bool opened = 1;
-}

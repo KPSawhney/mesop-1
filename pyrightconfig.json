@@ -1,9 +1,0 @@
-{
-  "include": ["mesop", "demo"],
-  "exclude": ["**/node_modules", "**/__pycache__", "**/fixtures", "**/venv"],
-  "extraPaths": ["bazel-bin"],
-  "reportMissingImports": true,
-  "reportMissingTypeStubs": false,
-  "pythonVersion": "3.10",
-  "pythonPlatform": "Linux"
-}

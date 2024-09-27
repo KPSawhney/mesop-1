@@ -1,6 +1,5 @@
-package(
-    default_visibility = ["//build_defs:mesop_internal"],
-)
+package(default_visibility = ["//visibility:public"])
+
 
 alias(
     name = "headers",

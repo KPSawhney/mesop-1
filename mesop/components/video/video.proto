@@ -1,7 +1,0 @@
-syntax = "proto2";
-
-package mesop.components.video;
-
-message VideoType {
-    optional string src = 1;
-}

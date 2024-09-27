@@ -1,7 +1,0 @@
-syntax = "proto2";
-
-package mesop.components.component_name;
-
-message ComponentNameType {
-    optional string label = 1;
-}

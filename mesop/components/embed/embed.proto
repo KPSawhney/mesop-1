@@ -1,7 +1,0 @@
-syntax = "proto2";
-
-package mesop.components.embed;
-
-message EmbedType {
-    optional string src = 1;
-}
