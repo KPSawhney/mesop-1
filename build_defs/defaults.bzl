@@ -25,10 +25,6 @@ THIRD_PARTY_PY_MYPY_PROTOBUF = [
     requirement("mypy-protobuf"),
 ]
 
-THIRD_PARTY_PY_DOTENV = [
-    requirement("python-dotenv"),
-]
-
 THIRD_PARTY_PY_GRPCIO = [
     requirement("grpcio"),
 ]

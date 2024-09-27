@@ -1,9 +1,5 @@
 absl-py
 grpcio
+mypy-protobuf
 protobuf
 python-dotenv
-
-# Deps for dev/testing:
-mypy-protobuf
-pytest
-
