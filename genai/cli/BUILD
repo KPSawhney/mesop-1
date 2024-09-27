@@ -17,7 +17,7 @@ COMMON_DEPS = (
     [
         ":execute_module",
         "//genai",  # Keep dep to ensure the entire Genai library is loaded.
-    ] + THIRD_PARTY_PY_ABSL_PY +
+    ] + THIRD_PARTY_PY_ABSL_PY
 )
 
 exports_files(["cli.py"])
