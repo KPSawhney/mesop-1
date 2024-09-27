@@ -1,7 +1,7 @@
 load(
     "//build_defs:defaults.bzl",
     "py_library",
-    "THIRD_PARTY_PY_GRPC"
+    "THIRD_PARTY_PY_GRPCIO"
 )
 
 package(default_visibility = ["//visibility:public"])
