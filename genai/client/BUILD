@@ -17,5 +17,5 @@ py_library(
     deps = [
                "//genai/content:content",
                "//genai/actions:actions",
-           ] + THIRD_PARTY_PY_GRPC
+           ] + THIRD_PARTY_PY_GRPCIO
 )
