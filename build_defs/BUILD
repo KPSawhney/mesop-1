@@ -1,8 +1,7 @@
 load("@rules_proto//proto:defs.bzl", "proto_lang_toolchain")
 load("@rules_python//python:pip.bzl", "compile_pip_requirements")
 
-# This is a placeholder where there's an actual allowlist in
-# the downstream sync.
+# TODO(KPSawhney): Visibility
 package(default_visibility = ["//visibility:public"])
 
 # Borrowed from: https://github.com/bazelbuild/rules_python/blob/a1169f1bda00cdf607d0fa173a93d72145d343bc/python/private/proto/BUILD.bazel#L38
